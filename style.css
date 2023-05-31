@@ -1,15 +1,16 @@
 /*
 Theme Name: 100 Bytes
 Author: Marc Armengou
-Description: A minimalist theme based on 100 bytes of CSS. Enough to look good anywhere. Inspired by this tweet: https://twitter.com/swyx/status/1449472712720601088
+Description: 100 Bytes is a theme that aims to look as optimal as possible to deliver your message to your audience using WordPress as a content manager. The idea is simple, make a theme that looks good everywhere, with as little CSS code as possible. In this case the limit is 100 Bytes of CSS information. Actually the compressed CSS code contains 82 bytes of information, but 100 bytes sounds better.
+Idea: One day this tweet appeared on my Twitter timeline (https://twitter.com/swyx/status/1449472712720601088) and I thought it was interesting to combine it with WordPress.
 Tags: blog, one-column, full-width-template
-Version: 1.0.4
+Version: 1.0.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 100-bytes
 Copyright: 2023 Marc Armengou
 Tested up to: 6.2
-Requires PHP: 7.4
+Requires PHP: 5.6
 */
 
 html {
