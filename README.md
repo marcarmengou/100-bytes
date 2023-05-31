@@ -1,5 +1,5 @@
 # 100 Bytes
-100 Bytes WordPress Theme
+100 Bytes WordPress Theme - 100 bytes of CSS to look great everywhere
 
 ## About
 
