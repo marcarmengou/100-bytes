@@ -9,6 +9,10 @@ The idea is simple, make a theme that looks good everywhere, with as little CSS 
 
 Actually the compressed CSS code contains 82 bytes of information, but 100 bytes sounds better.
 
+- No functions or styles for comments.
+- No styles for menus.
+- Yes styled to read well everywhere.
+
 ## Idea
 
 One day this tweet appeared on my Twitter timeline (https://twitter.com/swyx/status/1449472712720601088) and I thought it was interesting to combine it with WordPress.
