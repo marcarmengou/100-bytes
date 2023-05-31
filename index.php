@@ -10,12 +10,12 @@ if (have_posts()) :
 <?php
    endwhile;
    echo '<p>';
-   previous_posts_link('Newer posts');
+   previous_posts_link(__('Newer posts', '100-bytes'));
    echo ' | ';
-   next_posts_link('Older posts');
+   next_posts_link(__('Older posts', '100-bytes'));
    echo '</p>';
 else :
-   echo '<p>No content to display</p>';
+   echo '<p>' . __('No content to display', '100-bytes') . '</p>';
 endif;
 get_footer();
 ?>
