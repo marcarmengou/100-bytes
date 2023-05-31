@@ -10,8 +10,8 @@ The idea is simple, make a theme that looks good everywhere, with as little CSS 
 Actually the compressed CSS code contains 82 bytes of information, but 100 bytes sounds better.
 
 - No functions or styles for comments.
-- No styles for menus.
-- Yes styled to read well everywhere.
+- No functions or styles for menus.
+- Yes styles to read well everywhere.
 
 ## Idea
 
