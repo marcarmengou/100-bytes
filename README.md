@@ -9,9 +9,9 @@ The idea is simple, make a theme that looks good everywhere, with as little CSS 
 
 ## Requirements
 
-WordPress 6.2+
-PHP 5.6+
-License: GPLv2 or later
+- WordPress 6.2+
+- PHP 5.6+
+- License: GPLv2 or later
 
 ## Resources
 
