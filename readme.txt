@@ -24,7 +24,7 @@ This is a minimalist WordPress theme that uses just 100 bytes of CSS for its des
 
 == Changelog ==
 
-= 1.1.0 =
+= 1.1.1 =
 
 * Reorganized code in index.php
 * Added 404.php
