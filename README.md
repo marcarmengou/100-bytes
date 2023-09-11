@@ -19,7 +19,7 @@ One day this tweet appeared on my Twitter timeline (https://twitter.com/swyx/sta
 
 ## Requirements
 
-- WordPress 6.2+
+- WordPress 6.3+
 - PHP 5.6+
 - License: GPLv2 or later
 
