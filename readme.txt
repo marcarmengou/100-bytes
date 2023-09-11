@@ -1,10 +1,10 @@
 === 100 Bytes ===
 Contributors: Marc Armengou
 Tags: blog, one-column, full-width-template
-Requires at least: 5.7
-Tested up to: 6.2
+Requires at least: 5.6
+Tested up to: 6.3.1
 Requires PHP: 5.6
-Stable tag: 1.1.0
+Stable tag: 1.1.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,13 @@ This is a minimalist WordPress theme that uses just 100 bytes of CSS for its des
 100 Bytes is distributed under the terms of the GNU GPL
 
 == Changelog ==
+
+= 1.1.2 =
+
+* 2023-11-09
+* Compatibility: WordPress 5.6 - WordPress 6.3.1
+* Compatibility: PHP 5.6 - PHP 8.2
+* Improved code security and readability
 
 = 1.1.1 =
 
