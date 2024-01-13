@@ -2,9 +2,9 @@
 Contributors: Marc Armengou
 Tags: blog, one-column, full-width-template
 Requires at least: 5.6
-Tested up to: 6.3.1
+Tested up to: 6.4.2
 Requires PHP: 5.6
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,10 +19,16 @@ This is a minimalist WordPress theme that uses just 100 bytes of CSS for its des
 3. Click on the 'Activate' button to use your new theme right away.
 
 == Copyright ==
-100 Bytes, Copyright 2023 Marc Armengou
+100 Bytes, Copyright 2024 Marc Armengou
 100 Bytes is distributed under the terms of the GNU GPL
 
 == Changelog ==
+
+= 1.1.3 =
+
+* 2024-13-01
+* Compatibility: WordPress 5.6 - WordPress 6.4.2
+* Compatibility: PHP 5.6 - PHP 8.3
 
 = 1.1.2 =
 
@@ -39,32 +45,7 @@ This is a minimalist WordPress theme that uses just 100 bytes of CSS for its des
 = 1.0.9 =
 
 * Fix name prefixing, theme_enqueue_styles().
-
-= 1.0.8 =
-
 * Some corrections
-
-= 1.0.7 =
-
-* Some corrections
-
-= 1.0.6 =
-
-* Some corrections
-
-= 1.0.5 =
-
-* Some corrections
-
-= 1.0.4 =
-
-* Some corrections
-
-= 1.0.3 =
-* Some corrections
-
-= 1.0.1 =
-* Some bug fixes
 
 = 1.0 =
 * Initial release
