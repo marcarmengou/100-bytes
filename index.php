@@ -1,32 +1,30 @@
 <?php
-get_header();
-if (have_posts()) {
-    while (have_posts()) {
-        the_post(); ?>
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <p><?php the_excerpt(); ?></p>
-        </div>
+get_header(); ?>
+<main>
+<?php if ( have_posts() ) :
+    while ( have_posts() ) : the_post(); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <h2><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
+            <?php the_excerpt(); ?>
+        </article>
         <hr>
-    <?php }
-    
-    if (get_previous_posts_link() || get_next_posts_link()) { ?>
-        <p>
-        <?php 
-        if (get_previous_posts_link()) {
-            previous_posts_link(__('Newer posts', '100-bytes'));
-        }
-        if (get_previous_posts_link() && get_next_posts_link()) {
-            echo ' | ';
-        }
-        if (get_next_posts_link()) {
-            next_posts_link(__('Older posts', '100-bytes'));
-        }
-        ?>
-        </p>
-    <?php }
-} else { ?>
-    <p><?php echo __('No content to display', '100-bytes'); ?></p>
-<?php }
-get_footer();
-?>
+    <?php endwhile;
+
+    $prev = get_previous_posts_link( esc_html__( 'Newer posts', '100-bytes' ) );
+    $next = get_next_posts_link( esc_html__( 'Older posts', '100-bytes' ) );
+
+    if ( $prev || $next ) : ?>
+        <nav aria-label="<?php echo esc_attr__( 'Posts navigation', '100-bytes' ); ?>">
+            <?php
+            if ( $prev ) { echo $prev; }
+            if ( $prev && $next ) { echo '<span aria-hidden="true"> | </span>'; }
+            if ( $next ) { echo $next; }
+            ?>
+        </nav>
+    <?php endif;
+
+else : ?>
+    <p><?php esc_html_e( 'No content to display', '100-bytes' ); ?></p>
+<?php endif; ?>
+</main>
+<?php get_footer(); ?>
