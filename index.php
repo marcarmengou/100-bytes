@@ -10,15 +10,18 @@ get_header(); ?>
         <hr>
     <?php endwhile;
 
-    $prev = get_previous_posts_link( esc_html__( 'Newer posts', '100-bytes' ) );
-    $next = get_next_posts_link( esc_html__( 'Older posts', '100-bytes' ) );
-
-    if ( $prev || $next ) : ?>
+    if ( get_previous_posts_link() || get_next_posts_link() ) : ?>
         <nav aria-label="<?php echo esc_attr__( 'Posts navigation', '100-bytes' ); ?>">
             <?php
-            if ( $prev ) { echo $prev; }
-            if ( $prev && $next ) { echo '<span aria-hidden="true"> | </span>'; }
-            if ( $next ) { echo $next; }
+            if ( get_previous_posts_link() ) { 
+                echo get_previous_posts_link( esc_html__( 'Newer posts', '100-bytes' ) ); 
+            }
+            if ( get_previous_posts_link() && get_next_posts_link() ) { 
+                echo '<span aria-hidden="true"> | </span>'; 
+            }
+            if ( get_next_posts_link() ) { 
+                echo get_next_posts_link( esc_html__( 'Older posts', '100-bytes' ) ); 
+            }
             ?>
         </nav>
     <?php endif;

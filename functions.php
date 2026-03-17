@@ -12,10 +12,11 @@ endif;
 add_action( 'after_setup_theme', 'bytes100_setup' );
 
 function bytes100_enqueue_styles() {
-    $ver = file_exists( get_stylesheet_directory() . '/style.css' )
-        ? filemtime( get_stylesheet_directory() . '/style.css' )
-        : false;
-
-    wp_enqueue_style( 'bytes100-style', get_stylesheet_uri(), array(), $ver );
+    wp_enqueue_style( 
+        'bytes100-style', 
+        get_stylesheet_uri(), 
+        array(), 
+        file_exists( get_stylesheet_directory() . '/style.css' ) ? filemtime( get_stylesheet_directory() . '/style.css' ) : false 
+    );
 }
 add_action( 'wp_enqueue_scripts', 'bytes100_enqueue_styles' );

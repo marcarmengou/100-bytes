@@ -7,12 +7,17 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<?php
-$home_url   = esc_url( home_url( '/' ) );
-$site_title = get_bloginfo( 'name' );
-?>
+
 <?php if ( is_front_page() || is_home() ) : ?>
-  <h1><a href="<?php echo $home_url; ?>" rel="home"><?php echo esc_html( $site_title ); ?></a></h1>
+  <h1>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+        <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+    </a>
+  </h1>
 <?php else : ?>
-  <p><a href="<?php echo $home_url; ?>" rel="home"><?php echo esc_html( $site_title ); ?></a></p>
+  <p>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+        <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+    </a>
+  </p>
 <?php endif; ?>

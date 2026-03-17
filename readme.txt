@@ -2,9 +2,9 @@
 Contributors: Marc Armengou
 Tags: blog, one-column, full-width-template
 Requires at least: 5.6
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,13 @@ This is a minimalist WordPress theme that uses just 100 bytes of CSS for its des
 100 Bytes is distributed under the terms of the GNU GPL
 
 == Changelog ==
+
+= 1.1.5 =
+
+* 2026-03-17
+* Security: Implemented strict "Late Escaping" across templates.
+* Security: Removed intermediate variables to escape data at the exact point of rendering in header.php, footer.php, and index.php.
+* Performance: Refactored style enqueueing in functions.php to eliminate redundant variables.
 
 = 1.1.4 =
 
